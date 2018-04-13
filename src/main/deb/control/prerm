@@ -1,0 +1,5 @@
+#!/bin/sh
+
+service @project.artifactId@ stop
+systemctl disable @project.artifactId@.service
+systemctl daemon-reload

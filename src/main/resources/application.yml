@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: @project.name@
+  pid:
+    file: @project.artifactId@.pid
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "info,health,metrics,threaddump"
+
+server:
+  port: 8080
+  tomcat:
+    basedir: .
+    max-threads: 2
+    accesslog:
+      enabled: false
+      buffered: false
+      directory: logs/access
+      prefix: access
+      suffix: .log
+      file-date-format: .yyyy-MM-dd
+      pattern: common
+      request-attributes-enabled: true
+      rotate: true
+      rename-on-rotate: true
+
+logging:
+  file: logs/@project.artifactId@.log
+  level:
+    root: ERROR
+    org.springframework: INFO

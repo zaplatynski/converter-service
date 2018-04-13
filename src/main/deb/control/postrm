@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf /usr/lib/@project.build.finalName@
+rm -rf /var/log/@project.artifactId@
+rm -rf /var/run/@project.artifactId@

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+adduser --system --disabled-password --no-create-home --gecos "" @project.artifactId@

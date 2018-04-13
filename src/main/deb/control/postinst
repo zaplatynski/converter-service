@@ -1,0 +1,9 @@
+#!/bin/sh
+
+chown -R @project.artifactId@ /usr/lib/@project.build.finalName@
+chown -R @project.artifactId@ /var/log/@project.artifactId@
+chown -R @project.artifactId@ /var/run/@project.artifactId@
+
+systemctl daemon-reload
+systemctl enable @project.artifactId@.service
+service @project.artifactId@ start

@@ -1,0 +1,16 @@
+---
+numericValue: 123
+charValue: "abc"
+alphaNumeric: "123abc"
+myObject:
+  prop1: 1
+  prop2: true
+  prop3: false
+  prop4:
+  - "val1"
+  - "val2"
+  - "val3"
+  prop5:
+    nestedObj:
+      name: "MyName"
+      id: 345
