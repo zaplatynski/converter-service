@@ -1,4 +1,4 @@
-# Converter Service [![Build Status](https://travis-ci.org/zaplatynski/converter-service.svg?branch=master)](https://travis-ci.org/zaplatynski/converter-service)
+# Converter Service [![Build Status](https://travis-ci.org/zaplatynski/converter-service.svg?branch=master)](https://travis-ci.org/zaplatynski/converter-service) [![Coverage Status](https://coveralls.io/repos/github/zaplatynski/converter-service/badge.svg?branch=master)](https://coveralls.io/github/zaplatynski/converter-service?branch=master)
 
 This is an example or a bit more complex 'hello world' try-out to package a fully-executable Spring Boot application as Debian package so that it could be installed at any Debian derived Linux distribution such as Ubuntu.
 It will be installed as a systemd service and can be controlled using `service converter start` or `service converter stop`. Status information are available with `service converter status`.
