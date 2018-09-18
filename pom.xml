@@ -285,12 +285,12 @@
                         <artifactId>coveralls-maven-plugin</artifactId>
                         <version>4.3.0</version>
                         <configuration>
-                            <repoToken>${coveralls.token.fsm}</repoToken>
+                            <repoToken>${coveralls.token}</repoToken>
                         </configuration>
                     </plugin>
                 </plugins>
             </build>
         </profile>
-     <profiles>
+     </profiles>
 
 </project>
